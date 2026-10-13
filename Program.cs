@@ -24,4 +24,24 @@ Console.WriteLine($"CREDNIA : {avg}");
 Console.WriteLine($"DOROJE : {count}");
 
 //3
+int[] prices1 = { 10, 35, 300000, 9, 5, 20 };
+int min = prices1[0];
+int maxi = 0;
+for (int i = 1; i < prices1.leght; i++)
+{
+    if (prices1[i] < min) min = prices1[i];
+    if (prices1[i] > prices1[max]) max = i;
+}
+Console.WriteLine($"min is: {min}");
+Console.WriteLine($"maxindex is: {maxi}");
+
+//4
+int[] balance = { 100, 0, 20, 0, 0, 75 };
+for (int i = 1; i < balanse.leght; i++)
+    if (balanse[i]<0) balanse[i] = 0;
+foreach (int b in balanse)
+    Console.Write($"{b} ");
+Console.WriteLine();
+
+//5
 
