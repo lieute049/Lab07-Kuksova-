@@ -48,5 +48,13 @@ int[] num = new int[5];
 for (int i = 1; i < num.Length; i++)
 {
     Console.Write($"number {i + 1}: ");
-    num[i] = Convert.ToInt32(Console.ReadLine)
+    num[i] = Convert.ToInt32(Console.ReadLine());
 }
+Console.Write("reverse poriadok");
+for (int i = 1; i < num.Length - 1; i>=0; i++)
+    Console.Write($"{num[i]}");
+int even = 0;
+foreach (int i in num)
+    if (i %2==0) even++;
+Console.WriteLine();
+Console.WriteLine($"shetnih {even}");
